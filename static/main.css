@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url("./Poppins/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url("./Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url("./Poppins/Poppins-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    width: max-content;
+    height: fit-content;
+} */
+
+:root {
+    --app-bg-day: #fff;
+    --app-fore-color: rgb(142, 6, 233); 
+    --app-rtx-tab-light: #bbbbbb;
+    --app-bg-light-divs: rgb(226, 226, 226);
+    --box-shadow-app: 0 0 0 1px rgba(0,0,0,.05);
+    --body-light: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+    appearance: none;
+    /* background-color: #ccc; */
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    appearance: none;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins-Light';
+    /* margin: 0 80px 0 80px; */
+    background-color: #f5f5f5;
+}
+
+.rtx-tab {
+    width: 12em;
+    background-color: var(--app-rtx-tab-light);
+    padding: 2px;
+    border-radius: 4px;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    gap: 3px;
+}
+
+.rtx-tab button {
+    width: 80px;
+    height: fit-content;
+    padding: 5px 1px;
+    font-size: 12px;
+    outline: none;
+    border: 0 solid;
+    border-radius: 3px;
+    font-family: 'Poppins-Regular';
+    font-weight: 550;
+}
+
+.rtx-tab button:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.rtx-btn-unsel {
+    background-color: transparent;
+}
+
+.rtx-btn-sel {
+    color: green;
+}
+
